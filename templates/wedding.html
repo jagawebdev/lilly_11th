@@ -9,21 +9,17 @@
 <section id="gallery" class="container-space text-center">
     <div class="container">
         <div class="row row-centered">
-            {uploadedimage1Css}
-            <div class="col-md-3 col-centered">
+            <div class="col-md-3 col-centered" style="display:{coupleimage1Css}">
                 <div class="image-list wthumbnail"><a class="fancybox" rel="gallery1" href="images/1.jpg"><img data-u="image" src="images/1.jpg" alt="couple's picture" /></a></div>
             </div>
-            {uploadedimage2Css}
-            <div class="col-md-3 col-centered">
+            <div class="col-md-3 col-centered" style="display:{coupleimage2Css}">
                 <div class="image-list wthumbnail"><a class="fancybox" rel="gallery1" href="images/2.jpg"><img data-u="image" src="images/2.jpg" alt="couple's picture" /></a></div>
            
             </div>
-            {uploadedimage3Css}
-            <div class="col-md-3 col-centered">
+            <div class="col-md-3 col-centered" style="display:{coupleimage3Css}">
                 <div class="image-list wthumbnail"><a class="fancybox" rel="gallery1" href="images/3.jpg"><img data-u="image" src="images/3.jpg" alt="couple's picture" /></a></div>
             </div>
-            {uploadedimage4Css}
-            <div class="col-md-3 col-centered">
+            <div class="col-md-3 col-centered" style="display:{coupleimage4Css}">
                 <div class="image-list wthumbnail more-pic-link">
                     <a class="fancybox" rel="gallery1" href="images/4.jpg">
                         <img data-u="image" src="images/4.jpg" alt="couple's picture" />
@@ -32,12 +28,12 @@
                 </div>
             </div>
         </div>
-            <div class="image-list more_pic"><a class="fancybox" rel="gallery1" href="images/5.jpg"></a></div>
-            <div class="image-list more_pic"><a class="fancybox" rel="gallery1" href="images/6.jpg"></a></div>
-            <div class="image-list more_pic"><a class="fancybox" rel="gallery1" href="images/7.jpg"></a></div>
-            <div class="image-list more_pic"><a class="fancybox" rel="gallery1" href="images/8.jpg"></a></div>
-            <div class="image-list more_pic"><a class="fancybox" rel="gallery1" href="images/9.jpg"></a></div>
-            <div class="image-list more_pic"><a class="fancybox" rel="gallery1" href="images/10.jpg"></a></div>
+            <div class="image-list more_pic"><a class="{coupleimage5Css}" rel="gallery1" href="images/5.jpg"></a></div>
+            <div class="image-list more_pic"><a class="{coupleimage6Css}" rel="gallery1" href="images/6.jpg"></a></div>
+            <div class="image-list more_pic"><a class="{coupleimage7Css}" rel="gallery1" href="images/7.jpg"></a></div>
+            <div class="image-list more_pic"><a class="{coupleimage8Css}" rel="gallery1" href="images/8.jpg"></a></div>
+            <div class="image-list more_pic"><a class="{coupleimage9Css}" rel="gallery1" href="images/9.jpg"></a></div>
+            <div class="image-list more_pic"><a class="{coupleimage10Css}" rel="gallery1" href="images/10.jpg"></a></div>
     </div>
     <div class="clearfix"></div>
 </section>
@@ -63,10 +59,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3" style="display:{reg1css};">
-                <p>Gifts are appreciated but not necessary.
-                    However, if you would like to get us a present, we have put together a 
-                    little list of things we would like to add to our home.
-                    Please go to the links below.</p>
+                <p>{reg_decription}</p>
                     
                     <a href="{reg1link}" target="_blank" style="display:{reg1css};"><button>{reg1name}</button></a>
                     <a href="{reg2link}" target="_blank" style="display:{reg2css};"><button>{reg2name}</button></a>
@@ -84,7 +77,7 @@
         <div class="row bride-groom-sm-view">
             <!-- bridesmaids column ------------------ -->
             <div class="col-sm-6">
-                <div class="row row-space">
+                <div class="row row-space" style="display: {bridesmaid1}">
                     <div class="col-xs-6 jthumbnail">
                         <img src="images/b1.jpg" alt="maids-grooms-pic">
                     </div><!-- .col-sm-5 -->
@@ -94,16 +87,17 @@
                     </div><!-- .col-sm-7 -->
                 </div><!-- .row -->
                 
-                <div class="row row-space">
+                <div class="row row-space" style="display: {bridesmaid2}">
                     <div class="col-xs-5 jthumbnail">
                         <img src="images/b2.jpg" alt="maids-grooms-pic">
                     </div><!-- .col-sm-5 -->
                     <div class="col-xs-7">
                         <h4>{bridesmaid2_name}</h4>
+                        <p>{bridesmaid2_description}</p>
                     </div><!-- .col-sm-7 -->
                 </div><!-- .row -->
                 
-                <div class="row row-space">
+                <div class="row row-space" style="display: {bridesmaid3}">
                     <div class="col-xs-5 jthumbnail">
                         <img src="images/b3.jpg" alt="maids-grooms-pic">
                     </div><!-- .col-sm-5 -->
@@ -113,7 +107,7 @@
                     </div><!-- .col-sm-7 -->
                 </div><!-- .row -->
                 
-                <div class="row row-space">
+                <div class="row row-space" style="display: {bridesmaid4}">
                     <div class="col-xs-5 jthumbnail">
                         <img src="images/b4.jpg" alt="maids-grooms-pic">
                     </div><!-- .col-sm-5 -->
@@ -123,7 +117,7 @@
                     </div><!-- .col-sm-7 -->
                 </div><!-- .row -->
                 
-                <div class="row row-space">
+                <div class="row row-space" style="display: {bridesmaid5}">
                     <div class="col-xs-5 jthumbnail">
                         <img src="images/b5.jpg" alt="maids-grooms-pic">
                     </div><!-- .col-sm-5 -->
@@ -136,7 +130,7 @@
             
             <!-- groomsmen column ------------------ -->
             <div class="col-sm-6">
-                <div class="row row-space">
+                <div class="row row-space" style="display: {groomsman1}">
                     <div class="col-xs-5 jthumbnail">
                         <img src="images/g1.jpg" alt="maids-grooms-pic">
                     </div><!-- .col-sm-5 -->
@@ -146,7 +140,7 @@
                     </div><!-- .col-sm-7 -->
                 </div><!-- .row -->
                 
-                <div class="row row-space">
+                <div class="row row-space" style="display: {groomsman2}">
                     <div class="col-xs-5 jthumbnail">
                         <img src="images/g2.jpg" alt="maids-grooms-pic">
                     </div><!-- .col-sm-5 -->
@@ -156,7 +150,7 @@
                     </div><!-- .col-sm-7 -->
                 </div><!-- .row -->
                 
-                <div class="row row-space">
+                <div class="row row-space" style="display: {groomsman3}">
                     <div class="col-xs-5 jthumbnail">
                         <img src="images/g3.jpg" alt="maids-grooms-pic">
                     </div><!-- .col-sm-5 -->
@@ -166,7 +160,7 @@
                     </div><!-- .col-sm-7 -->
                 </div><!-- .row -->
                 
-                <div class="row row-space">
+                <div class="row row-space" style="display: {groomsman4}">
                     <div class="col-xs-5 jthumbnail">
                         <img src="images/g4.jpg" alt="maids-grooms-pic">
                     </div><!-- .col-sm-5 -->
@@ -176,7 +170,7 @@
                     </div><!-- .col-sm-7 -->
                 </div><!-- .row -->
                 
-                <div class="row row-space">
+                <div class="row row-space" style="display: {groomsman5}">
                     <div class="col-xs-5 jthumbnail">
                         <img src="images/g5.jpg" alt="maids-grooms-pic">
                     </div><!-- .col-sm-5 -->
@@ -199,7 +193,7 @@
                 <p>We have hired a booking agent to make your travel
                 planning easy. Please checkout the Resort Page for more information about pricing and booking.</p>
                 
-                <a href="#/destination"><button>Resort</button></a>
+                <a href="#/destination"><button>Resort Page</button></a>
                 <a href="#/destination#packages"><button>price list</button></a>
                 <a href="#/destination#booking"><button>book now!</button></a>
             </div><!-- .col-sm-6 -->

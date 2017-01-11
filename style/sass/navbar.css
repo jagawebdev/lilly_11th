@@ -1,0 +1,102 @@
+header {
+  display: block;
+  position: absolute;
+  width: 100%;
+  font-size: 14px;
+  z-index: 200;
+  padding: 30px 0 15px 0; }
+
+#menu {
+  position: fixed;
+  display: block;
+  top: 0px;
+  width: 100%;
+  font-size: 14px;
+  background-color: white;
+  border-bottom: solid 1px #b9874c;
+  color: #b9874c;
+  z-index: 9999;
+  padding: 15px 0 0 0;
+  display: none; }
+
+.navigation {
+  display: block;
+  position: relative;
+  margin: auto;
+  color: #b9874c;
+  font-family: 'Josefin Sans', Arial, sans-serif; }
+  .navigation a {
+    color: #b9874c;
+    text-decoration: none;
+    letter-spacing: 1px; }
+    .navigation a:hover {
+      text-decoration: underline; }
+
+.logo {
+  position: relative;
+  display: inline-block;
+  font-family: 'Playfair Display SC', serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: -15px; }
+
+.navigation-list {
+  position: relative;
+  display: block;
+  float: right; }
+  .navigation-list ul {
+    list-style: none; }
+    .navigation-list ul li {
+      display: inline-block;
+      text-transform: uppercase;
+      padding-right: 25px; }
+    .navigation-list ul li:last-child {
+      padding: 0 0; }
+
+.hamburger {
+  display: none;
+  color: #b9874c;
+  font-size: 25px;
+  line-height: 0px;
+  padding: 0 15px 0 0;
+  float: right;
+  text-align: right;
+  z-index: 300; }
+  .hamburger:hover {
+    cursor: pointer; }
+
+.drop-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 37px;
+  text-align: center;
+  z-index: 200;
+  background-color: white; }
+  .drop-menu ul {
+    list-style: none;
+    padding-left: 0; }
+    .drop-menu ul li {
+      padding-top: 20px; }
+    .drop-menu ul a {
+      text-decoration: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #b9874c; }
+      .drop-menu ul a:hover {
+        color: #b9874c; }
+
+@media screen and (max-width: 770px) {
+  .navigation {
+    width: 100%; }
+    .navigation .navigation-list {
+      display: none; }
+
+  .hamburger {
+    display: inline-block;
+    z-index: 300; } }
+
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,221 @@
+<!-- WEDDING PAGE ====================================== -->
+<div id="wedding-page"><!-- used to select odd sections and give them background color -->
+<div id="wedding" class="container">
+    <div class="div-nav-space text-center">
+        <p class="couple-name">{bride_first_name} &amp; {groom_first_name}</p>
+    </div>
+</div><!-- .container -->
+
+<section id="gallery" class="container-space text-center">
+    <div class="container">
+        <div class="row row-centered">
+            {uploadedimage1Css}
+            <div class="col-md-3 col-centered">
+                <div class="image-list wthumbnail"><a class="fancybox" rel="gallery1" href="images/1.jpg"><img data-u="image" src="images/1.jpg" alt="couple's picture" /></a></div>
+            </div>
+            {uploadedimage2Css}
+            <div class="col-md-3 col-centered">
+                <div class="image-list wthumbnail"><a class="fancybox" rel="gallery1" href="images/2.jpg"><img data-u="image" src="images/2.jpg" alt="couple's picture" /></a></div>
+           
+            </div>
+            {uploadedimage3Css}
+            <div class="col-md-3 col-centered">
+                <div class="image-list wthumbnail"><a class="fancybox" rel="gallery1" href="images/3.jpg"><img data-u="image" src="images/3.jpg" alt="couple's picture" /></a></div>
+            </div>
+            {uploadedimage4Css}
+            <div class="col-md-3 col-centered">
+                <div class="image-list wthumbnail more-pic-link">
+                    <a class="fancybox" rel="gallery1" href="images/4.jpg">
+                        <img data-u="image" src="images/4.jpg" alt="couple's picture" />
+                        <div class="thumb-meta">More Pictures...</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+            <div class="image-list more_pic"><a class="fancybox" rel="gallery1" href="images/5.jpg"></a></div>
+            <div class="image-list more_pic"><a class="fancybox" rel="gallery1" href="images/6.jpg"></a></div>
+            <div class="image-list more_pic"><a class="fancybox" rel="gallery1" href="images/7.jpg"></a></div>
+            <div class="image-list more_pic"><a class="fancybox" rel="gallery1" href="images/8.jpg"></a></div>
+            <div class="image-list more_pic"><a class="fancybox" rel="gallery1" href="images/9.jpg"></a></div>
+            <div class="image-list more_pic"><a class="fancybox" rel="gallery1" href="images/10.jpg"></a></div>
+    </div>
+    <div class="clearfix"></div>
+</section>
+
+<!-- STORY LINE ====================================== -->
+<section id="couple-story" class="container-space text-center" style="display:{about_usCSS};">
+    <h1>our story</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <p>{about_us}</p>
+                
+                <button data-toggle="modal" data-target="#rsvpModal">rsvp</button>
+                <button data-toggle="modal" data-target="#guestList" style="display:{guestlistCSS};">Guest List</button>
+            </div><!-- .col-sm-6 -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section><!-- #couple-story-->
+
+<!-- REGISTERY ====================================== -->
+<section id="registery" class="container-space text-center">
+    <h1>Registry</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3" style="display:{reg1css};">
+                <p>Gifts are appreciated but not necessary.
+                    However, if you would like to get us a present, we have put together a 
+                    little list of things we would like to add to our home.
+                    Please go to the links below.</p>
+                    
+                    <a href="{reg1link}" target="_blank" style="display:{reg1css};"><button>{reg1name}</button></a>
+                    <a href="{reg2link}" target="_blank" style="display:{reg2css};"><button>{reg2name}</button></a>
+                    <a href="{reg3link}" target="_blank" style="display:{reg3css};"><button>{reg3name}</button></a>
+                    <a href="{reg4link}" target="_blank" style="display:{reg4css};"><button>{reg4name}</button></a>
+            </div><!-- .col-sm-6 -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section><!-- #registery-->
+
+<!-- BRIDESMAIDS AND GROOMSMEN ====================================== -->
+<section id="maids-grooms" class="container-space">
+    <h1 class="text-center"> Bridesmaids & Groomsmen</h1>
+    <div class="container">
+        <div class="row bride-groom-sm-view">
+            <!-- bridesmaids column ------------------ -->
+            <div class="col-sm-6">
+                <div class="row row-space">
+                    <div class="col-xs-6 jthumbnail">
+                        <img src="images/b1.jpg" alt="maids-grooms-pic">
+                    </div><!-- .col-sm-5 -->
+                    <div class="col-xs-7">
+                        <h4>{bridesmaid1_name}</h4>
+                        <p>{bridesmaid1_description}</p>
+                    </div><!-- .col-sm-7 -->
+                </div><!-- .row -->
+                
+                <div class="row row-space">
+                    <div class="col-xs-5 jthumbnail">
+                        <img src="images/b2.jpg" alt="maids-grooms-pic">
+                    </div><!-- .col-sm-5 -->
+                    <div class="col-xs-7">
+                        <h4>{bridesmaid2_name}</h4>
+                    </div><!-- .col-sm-7 -->
+                </div><!-- .row -->
+                
+                <div class="row row-space">
+                    <div class="col-xs-5 jthumbnail">
+                        <img src="images/b3.jpg" alt="maids-grooms-pic">
+                    </div><!-- .col-sm-5 -->
+                    <div class="col-xs-7">
+                        <h4>{bridesmaid3_name}</h4>
+                        <p>{bridesmaid3_description}</p>
+                    </div><!-- .col-sm-7 -->
+                </div><!-- .row -->
+                
+                <div class="row row-space">
+                    <div class="col-xs-5 jthumbnail">
+                        <img src="images/b4.jpg" alt="maids-grooms-pic">
+                    </div><!-- .col-sm-5 -->
+                    <div class="col-xs-7">
+                        <h4>{bridesmaid4_name}</h4>
+                        <p>{bridesmaid4_description}</p>
+                    </div><!-- .col-sm-7 -->
+                </div><!-- .row -->
+                
+                <div class="row row-space">
+                    <div class="col-xs-5 jthumbnail">
+                        <img src="images/b5.jpg" alt="maids-grooms-pic">
+                    </div><!-- .col-sm-5 -->
+                    <div class="col-xs-7">
+                        <h4>{bridesmaid5_name}</h4>
+                        <p>{bridesmaid5_description}</p>
+                    </div><!-- .col-sm-7 -->
+                </div><!-- .row -->
+            </div><!-- .col-sm-6 -->
+            
+            <!-- groomsmen column ------------------ -->
+            <div class="col-sm-6">
+                <div class="row row-space">
+                    <div class="col-xs-5 jthumbnail">
+                        <img src="images/g1.jpg" alt="maids-grooms-pic">
+                    </div><!-- .col-sm-5 -->
+                    <div class="col-xs-7">
+                        <h4>{groomsman1_name}</h4>
+                        <p>{groomsman1_description}</p>
+                    </div><!-- .col-sm-7 -->
+                </div><!-- .row -->
+                
+                <div class="row row-space">
+                    <div class="col-xs-5 jthumbnail">
+                        <img src="images/g2.jpg" alt="maids-grooms-pic">
+                    </div><!-- .col-sm-5 -->
+                    <div class="col-xs-7">
+                        <h4>{groomsman2_name}</h4>
+                        <p>{groomsman2_description}</p>
+                    </div><!-- .col-sm-7 -->
+                </div><!-- .row -->
+                
+                <div class="row row-space">
+                    <div class="col-xs-5 jthumbnail">
+                        <img src="images/g3.jpg" alt="maids-grooms-pic">
+                    </div><!-- .col-sm-5 -->
+                    <div class="col-xs-7">
+                        <h4>{groomsman3_name}</h4>
+                        <p>{groomsman3_description}</p>
+                    </div><!-- .col-sm-7 -->
+                </div><!-- .row -->
+                
+                <div class="row row-space">
+                    <div class="col-xs-5 jthumbnail">
+                        <img src="images/g4.jpg" alt="maids-grooms-pic">
+                    </div><!-- .col-sm-5 -->
+                    <div class="col-xs-7">
+                        <h4>{groomsman4_name}</h4>
+                        <p>{groomsman4_description}</p>
+                    </div><!-- .col-sm-7 -->
+                </div><!-- .row -->
+                
+                <div class="row row-space">
+                    <div class="col-xs-5 jthumbnail">
+                        <img src="images/g5.jpg" alt="maids-grooms-pic">
+                    </div><!-- .col-sm-5 -->
+                    <div class="col-xs-7">
+                        <h4>{groomsman5_name}</h4>
+                        <p>{groomsman5_description}</p>
+                    </div><!-- .col-sm-7 -->
+                </div><!-- .row -->
+                
+            </div><!-- .col-sm-6 -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section><!-- #maids-grooms -->
+
+<!-- BOOK NOW ====================================== -->
+<section id="book-now" class="container-space text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <p>We have hired a booking agent to make your travel
+                planning easy. Please checkout the Resort Page for more information about pricing and booking.</p>
+                
+                <a href="#/destination"><button>Resort</button></a>
+                <a href="#/destination#packages"><button>price list</button></a>
+                <a href="#/destination#booking"><button>book now!</button></a>
+            </div><!-- .col-sm-6 -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section><!-- #registery-->
+
+<!-- INSTAGRAM # ====================================== -->
+<section id="registery" class="container-space text-center">
+    <h1>Share your photos with us</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <p class="hashtag">#destifywedding</p>
+            </div><!-- .col-sm-6 -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section><!-- #registery-->
+</div>

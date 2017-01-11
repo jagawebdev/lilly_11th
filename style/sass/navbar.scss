@@ -1,0 +1,124 @@
+@import "colors.scss";
+
+header {
+    display: block;
+    position: absolute;
+    width: 100%;
+    font-size: 14px;
+    z-index: 200;
+    padding: 30px 0 15px 0;
+}
+
+#menu {
+    position: fixed;
+    display: block;
+	top: 0px;
+	width: 100%; 
+	font-size: 14px;
+	background-color: white;
+	border-bottom: solid 1px $main-color;
+	color: $main-color;
+	z-index: 9999;
+	padding: 15px 0 0 0;
+	display: none;
+}
+
+.navigation {
+    display: block;
+    position: relative;
+    margin: auto;
+    color: $main-color;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    a {
+        color: $main-color;
+        text-decoration: none;
+        letter-spacing: 1px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: -15px;
+}
+
+.navigation-list {
+    position: relative;
+    display: block;
+    float: right;
+    ul {
+        list-style: none;
+        li {
+            display: inline-block;
+            text-transform: uppercase;
+            padding-right: 25px;
+        }
+        li:last-child {
+                padding: 0 0;
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+    //position: relative;
+    color: $main-color;
+    font-size: 25px;
+    line-height: 0px;
+    padding: 0 15px 0 0;
+    float: right;
+    text-align: right;
+    z-index: 300;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 37px;
+    text-align: center;
+    z-index: 200;
+    background-color: white;
+    ul {
+        list-style:none;
+        padding-left: 0;
+        li {
+            padding-top: 20px ;
+        }
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $main-color;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .navigation {
+        width: 100%;
+        .navigation-list {
+            display: none;
+        }
+    }
+    
+    .hamburger {
+        display: inline-block;
+        z-index: 300;
+    }
+}

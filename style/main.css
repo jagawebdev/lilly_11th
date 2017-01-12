@@ -546,7 +546,7 @@ ul {
   margin-right: -4px; }
 
 #hero {
-  background: url("../assets/img/white_rose.jpg") center no-repeat;
+  background: url("../assets/img/{background_image}") center no-repeat;
   background-size: cover;
   width: 100%;
   height: 700px;

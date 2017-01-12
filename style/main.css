@@ -474,7 +474,11 @@ img {
 
 body {
   font-family: 'Raleway', Helvetica, sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  min-height: 100%; }
+
+b, strong {
+  -webkit-font-smoothing: antialiased; }
 
 h1, h2, h3 {
   font-family: 'Josefin Sans', Arial, sans-serif;
@@ -1036,11 +1040,9 @@ iframe {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-.package-well-content {
-  margin-top: -10px; }
-  .package-well-content .price {
-    font-size: 20px;
-    color: black; }
+#packages .price {
+  font-size: 20px;
+  color: black; }
 
 .booking-well {
   background-color: #f6f6f6;

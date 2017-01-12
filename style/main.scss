@@ -41,6 +41,11 @@ img {
 body {
     font-family: 'Raleway', Helvetica, sans-serif;
     font-size: 14px;
+    min-height: 100%;
+}
+
+b, strong {
+    -webkit-font-smoothing: antialiased;
 }
 
 // ************************************* //
@@ -762,8 +767,7 @@ iframe {
     transform: translate(-50%,-50%);
 }
 
-.package-well-content {
-    margin-top: -10px;
+#packages {
     .price {
         font-size: 20px; 
         color: black;

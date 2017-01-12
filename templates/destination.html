@@ -1,6 +1,4 @@
 <!-- DESTINATION PAGE ====================================== -->
-<div id="destination-page"><!-- used to select odd sections and give them background color -->
-
 <section id="destination" class="container">
     <div class="div-nav-space text-center">
         <h1 class="text-center">{hotel_c}</h1>
@@ -41,94 +39,43 @@
                     
             </div><!-- .col-sm-8 -->
         </div><!-- .row -->
-    
-<!-- START PACKAGES ----------------- -->
-        <div class="row match-my-cols package-well-img" style="display:{titlecss1};">
-            <div class="col-sm-4">
+        
+<!-- START PACKAGES ROW 1----------------- -->
+        <div class="row col-padding-sm-view jrow-centered" style="display:{titlecss1};">
+            <div class="col-sm-4 white jcol-centered">
                 <img {src1package}="../images/package1.jpg" class="{package1imageCSS}">
-            </div><!-- .col-sm-4 -->
-            <div class="col-sm-8 package-well-content">
                 <h4>{title1_c}</h4>
                 <p>
                 <span class="price" style="display:{price1css}">{package_1_price}{pricing_type_1}</span>
                 </br></br>
+                <a href="#/destination#booking" class="scroll-to"><button>book now!</button></a>
+                </br></br>
                 {package1_c}</p>
-                <a href="#/destination#booking"><button>book now!</button></a>
-            </div><!-- .col-sm-8-->
-        </div><!-- .row -->
-        
-        <div class="row match-my-cols package-well-img" style="display:{titlecss2};">
-            <div class="col-sm-4">
+            </div>
+            
+            <div class="col-sm-4 white jcol-centered" style="display:{titlecss2};">
                 <img {src2package}="../images/package2.jpg" class="{package2imageCSS}">
-            </div><!-- .col-sm-4 -->
-            <div class="col-sm-8 package-well-content">
                 <h4>{title2_c}</h4>
                 <p>
                 <span class="price" style="display:{price2css}">{package_2_price}{pricing_type_2}</span>
                 </br></br>
+                <a href="#/destination#booking" class="scroll-to"><button>book now!</button></a>
+                </br></br>
                 {package2_c}</p>
-                <a href="#/destination#booking" id="scroll-to"><button>book now!</button></a>
-            </div><!-- .col-sm-8-->
-        </div><!-- .row -->
-        
-        <div class="row match-my-cols package-well-img" style="display:{titlecss3};">
-            <div class="col-sm-4">
-                <img {src3package}="../images/package3.jpg" class="{package3imageCSS}">
-            </div><!-- .col-sm-4 -->
-            <div class="col-sm-8 package-well-content">
+            </div>
+            
+            <div class="col-sm-4 white jcol-centered" style="display:{titlecss3};">
+                <img {src3package}="../images/package1.jpg" class="{package3imageCSS}">
                 <h4>{title3_c}</h4>
                 <p>
                 <span class="price" style="display:{price3css}">{package_3_price}{pricing_type_3}</span>
                 </br></br>
+                <a href="#/destination#booking" class="scroll-to"><button>book now!</button></a>
+                </br></br>
                 {package3_c}</p>
-                <a href="#/destination#booking" class="scroll-to"><button>book now!</button></a>
-            </div><!-- .col-sm-8-->
-        </div><!-- .row -->
-        
-        <div class="row match-my-cols package-well-img" style="display:{titlecss4};">
-            <div class="col-sm-4">
-                <img {src4package}="../images/package4.jpg" class="{package4imageCSS}">
-            </div><!-- .col-sm-4 -->
-            <div class="col-sm-8 package-well-content">
-                <h4>{title4_c}</h4>
-                <p>
-                <span class="price" style="display:{price4css}">{package_4_price}{pricing_type_4}</span>
-                </br></br>
-                {package4_c}</p>
-                <a href="#/destination#booking" class="scroll-to"><button>book now!</button></a>
-            </div><!-- .col-sm-8-->
-        </div><!-- .row -->
-        
-        <div class="row match-my-cols package-well-img" style="display:{titlecss5};">
-            <div class="col-sm-4">
-                <img {src5package}="../images/package5.jpg" class="{package5imageCSS}">
-            </div><!-- .col-sm-4 -->
-            <div class="col-sm-8 package-well-content">
-                <h4>{title5_c}</h4>
-                <p>
-                <span class="price" style="display:{price5css}">{package_5_price}{pricing_type_5}</span>
-                </br></br>
-                {package5_c}</p>
-                <a href="#/destination#booking" class="scroll-to"><button>book now!</button></a>
-            </div><!-- .col-sm-8-->
-        </div><!-- .row -->
-        
-        <div class="row match-my-cols package-well-img" style="display:{titlecss6};">
-            <div class="col-sm-4">
-                <img {src6package}="../images/package6.jpg" class="{package6imageCSS}">
-            </div><!-- .col-sm-4 -->
-            <div class="col-sm-8 package-well-content">
-                <h4>{title6_c}</h4>
-                <p>
-                <span class="price" style="display:{price6css}">{package_6_price}{pricing_type_6}</span>
-                </br></br>
-                {package6_c}</p>
-                <a href="#/destination#booking" class="scroll-to"><button>book now!</button></a>
-            </div><!-- .col-sm-8-->
-        </div><!-- .row -->
-<!-- END PACKAGES ----------------- -->
-
-    </div><!-- .containter -->
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- BOOKING INFORMATION ====================================== -->
@@ -144,8 +91,8 @@
             </div><!-- .col-sm-8 -->
         </div><!-- .row -->
         
-        <div class="row booking-steps row-centered match-my-cols">
-            <div class="col-sm-4 booking-well col-centered">
+        <div class="row booking-steps jrow-centered">
+            <div class="col-sm-4 booking-well jcol-centered">
                 <span class="booking-number">1. Rooming Form</span>
                 </br></br>
                 <p>Please, choose a package that is provided above 
@@ -154,14 +101,14 @@
                 <a href="http://travelzap.com/rooming/?r={booking_number}" target="_blank"><button>Rooming Form</button></a>
             </div>
             
-            <div class="col-sm-4 booking-well col-centered">
+            <div class="col-sm-4 booking-well jcol-centered">
                 <span class="booking-number">2. Deposit</span>
                 </br></br>
                 <p class="para-bottom">Submit your ${deposits_person} deposit Per Person.</p>
                 <a href="https://travelzap.com/payments/?r={booking_number}" target="_blank"><button>Deposit</button></a>
             </div>
             
-            <div class="col-sm-4 booking-well col-centered" style="display:{insurancecss}">
+            <div class="col-sm-4 booking-well jcol-centered" style="display:{insurancecss}">
                 <span class="booking-number">3. Travel Insurance</span>
                 </br></br>
                 <p class="para-bottom2">This step is optional. Cancel for any reason travel insurance.</p>
@@ -195,4 +142,3 @@
         </div><!-- .row -->
     </div><!-- .container -->
 </section><!-- #additional-info-->
-</div>

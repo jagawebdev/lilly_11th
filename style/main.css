@@ -727,7 +727,7 @@ footer a {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  padding: 20px 0 1px 0;
+  padding: 20px 5px 1px 5px;
   color: white;
   font-size: 13px; }
 
@@ -958,9 +958,6 @@ iframe {
 .hashtag {
   font-size: 24px; }
 
-#destination-page section:nth-child(even) {
-  background: #f6f6f6; }
-
 #destination h1 {
   margin-bottom: 0; }
 #destination h4 {
@@ -991,6 +988,8 @@ iframe {
   background-color: #f6f6f6; }
   #packages h1 {
     margin-bottom: 10px; }
+  #packages .white {
+    border: solid 10px #f6f6f6; }
 
 .ion-arrow-up-c {
   color: white;
@@ -1005,6 +1004,16 @@ iframe {
     background-color: transparent;
     color: #b9874c; }
 
+.jrow-centered {
+  text-align: center;
+  display: table-row; }
+
+.jcol-centered {
+  display: table-cell;
+  float: none;
+  vertical-align: top;
+  text-align: left; }
+
 .package-well-img {
   background-color: white;
   padding-top: 15px;
@@ -1014,7 +1023,8 @@ iframe {
   position: relative;
   width: 100%;
   height: 200px;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-top: 15px; }
 
 .pthumbnail img {
   position: absolute;
@@ -1108,6 +1118,9 @@ iframe {
     margin-left: 3px;
     margin-right: 3px; }
 
+  .jcol-centered {
+    float: left; }
+
   .booking-well {
     border: solid 10px white;
     width: 100%; }
@@ -1118,16 +1131,6 @@ iframe {
 
   .arrow {
     display: none; } }
-@media screen and (max-width: 800px) {
-  #booking .booking-steps {
-    background-color: #f6f6f6; }
-
-  .booking-steps.row-centered {
-    text-align: left; }
-
-  .booking-steps.col-centered {
-    display: block;
-    float: left; } }
 @media screen and (max-width: 991px) {
   .para-bottom2 {
     margin-bottom: 56px; } }

@@ -1016,21 +1016,17 @@ iframe {
   display: table-cell;
   float: none;
   vertical-align: top;
-  text-align: left; }
-
-.package-well-img {
-  background-color: white;
-  padding-top: 15px;
-  margin: 15px 0; }
+  text-align: left;
+  padding-top: 15px; }
 
 .pthumbnail {
   position: relative;
   width: 100%;
   height: 200px;
-  overflow: hidden;
-  padding-top: 15px; }
+  overflow: hidden; }
 
 .pthumbnail img {
+  margin-top: 15px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1121,7 +1117,8 @@ iframe {
     margin-right: 3px; }
 
   .jcol-centered {
-    float: left; }
+    float: left;
+    width: 100%; }
 
   .booking-well {
     border: solid 10px white;

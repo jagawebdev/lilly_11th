@@ -740,12 +740,7 @@ iframe {
   float: none;
   vertical-align: top;
   text-align: left;
-}
-
-.package-well-img {
-    background-color: white;
-    padding-top: 15px;
-    margin: 15px 0;
+  padding-top: 15px;
 }
 
 .pthumbnail {
@@ -753,10 +748,10 @@ iframe {
     width: 100%;
     height: 200px;
     overflow: hidden;
-    padding-top: 15px;
 }
 
 .pthumbnail img {
+    margin-top: 15px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -884,6 +879,7 @@ iframe {
     
     .jcol-centered {
       float: left;
+      width: 100%;
     }
     
     .booking-well {

@@ -502,6 +502,9 @@ button {
     color: #b9874c;
     background-color: transparent; }
 
+button:focus {
+  outline: 0; }
+
 .bold {
   font-weight: bold; }
 
@@ -597,8 +600,16 @@ ul {
 #sample-info {
   padding: 30px; }
 
+.sample-info-pic-wedding img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 400px;
+  outline: 1px solid #b9874c;
+  outline-offset: -20px; }
+
 .sample-info-pic img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   outline: 1px solid #b9874c;
   outline-offset: -20px; }
@@ -974,9 +985,7 @@ iframe {
   position: relative;
   width: 300px;
   height: 200px;
-  overflow: hidden;
-  outline: 1px solid #b9874c;
-  outline-offset: -20px; }
+  overflow: hidden; }
 
 .bthumbnail img {
   position: absolute;
@@ -986,7 +995,9 @@ iframe {
   width: auto;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  outline: 1px solid #b9874c;
+  outline-offset: -20px; }
 
 #packages {
   background-color: #f6f6f6; }
@@ -1016,8 +1027,7 @@ iframe {
   display: table-cell;
   float: none;
   vertical-align: top;
-  text-align: left;
-  padding-top: 15px; }
+  text-align: left; }
 
 .pthumbnail {
   position: relative;
@@ -1026,7 +1036,6 @@ iframe {
   overflow: hidden; }
 
 .pthumbnail img {
-  margin-top: 15px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1050,6 +1059,9 @@ iframe {
 
 .para-bottom {
   margin-bottom: 57px; }
+
+.para-bottom3 {
+  margin-bottom: 37px; }
 
 .para-bottom2 {
   margin-bottom: 37px; }
@@ -1132,7 +1144,13 @@ iframe {
     display: none; } }
 @media screen and (max-width: 991px) {
   .para-bottom2 {
-    margin-bottom: 56px; } }
+    margin-bottom: 37px; }
+
+  .para-bottom3 {
+    margin-bottom: 37px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .para-bottom3 {
+    margin-bottom: 20px; } }
 @media screen and (max-width: 1025px) {
   #fixed-footer {
     display: none !important; } }

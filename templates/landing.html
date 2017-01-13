@@ -14,13 +14,13 @@
 </section><!-- end hero -->
 
 <!-- COUNT DOWN ====================================== -->
-<section id="count-down" class="container text-center">
+<section id="count-down" class="container text-center" style="display: {countdownCss}">
     <div class="row">
         <div id="countdown">
         </div>
             <script type="text/javascript">
             $("#countdown")
-            .countdown("2017/09/01", function(event) {
+            .countdown("{countdown_date}", function(event) {
             var $this = $(this).html(event.strftime(''
             + '<div class="col-xs-2 col-xs-offset-1"><span class="label">months</span></br><span class="number">%m</span></div>'
             + '<div class="col-xs-2"><span class="label">days</span></br><span class="number">%n</span></div>'
@@ -39,8 +39,8 @@
 <section id="sample-info" class="off-white-bg">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 sample-info-pic">
-                <img src="{img1}"/>
+            <div class="col-sm-6 sample-info-pic-wedding">
+                <img src="images/1.jpg" alt="couple's picture" />
             </div><!-- end sample-info-pic -->
             
             <div class="col-sm-6 sample-info-text">

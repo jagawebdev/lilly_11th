@@ -818,6 +818,7 @@ iframe {
 @media (min-width: 769px) and (max-width: 1012px) {
     #hero {
         padding-top: 120px;
+        height: 500px;
     }
 
     .couple-name {
@@ -874,6 +875,10 @@ iframe {
 
     .sample-info-text {
         padding: 0 15px;
+    }
+    
+    footer {
+        padding-bottom: 80px;
     }
     
     .footer-nav {
@@ -938,5 +943,11 @@ iframe {
 @media (min-width: 1025px) {
     #fixed-footer-sm {
             display: none !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .pthumbnail {
+        height: 200px;
     }
 }

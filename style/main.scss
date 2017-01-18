@@ -144,6 +144,7 @@ ul {
     height: 700px;
     font-family: 'Josefin Sans', Arial, sans-serif;
     color: $main-color;
+    padding-top: 220px;
 }
 
 .couple-name {
@@ -805,11 +806,8 @@ iframe {
 
 @media (min-width: 769px) and (max-width: 1012px) {
     #hero {
-        height: 500px;
-    }
-    
-    .names {
         padding-top: 120px;
+        height: 500px;
     }
 
     .couple-name {
@@ -828,11 +826,8 @@ iframe {
 
 @media screen and (max-width: 768px) {
     #hero {
-        height: 500px;
-    }
-    
-    .names {
         padding-top: 120px;
+        height: 500px;
     }
     
     .couple-name {

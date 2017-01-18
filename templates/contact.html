@@ -1,4 +1,6 @@
 <!-- ========== CONTACT PAGE ========== -->
+<!-- Contact Form Processing -->  
+<script src="js/contact.js"></script>
 <section id="contact">
     <div class="container">
         <div class="row div-nav-space match-my-cols">
@@ -12,32 +14,32 @@
 	                </ul>
 	                
 	                </br>
-		            <h3>Send message to the agent</h3>
-	                    
-					<form method="post" class="form-horizontal contact-form" action="php/contact/contact.php">
-						<!-- Honeypot SPAM Protection -->
-						<input type="text" name="cf[honeypot]" style="display: none">
-						<!-- END Honeypot SPAM Protection -->
-	
+		            <h3>Send a message to the agent</h3> 
+	                <div id ="contactform">
+                    <form class="form-horizontal contact-form" role="form">
 						<div class="form-group">
-							<div class="col-md-6">
-								<input type="text" name="cf[name]" class="form-control required" placeholder="Your Name">
+							<div id="cname-group"  class="col-md-6">
+                                <label></label>                            
+								<input type="text" name="inputName" id="inputName" class="form-control required" placeholder="Your Name">
 							</div>
-							<div class="col-md-6">
-								<input type="email" name="cf[email]" class="form-control required email" placeholder="Your Email">
+							<div id="cemail-group"  class="col-md-6">
+                                <label></label>                            
+								<input type="email" name="inputEmail" id="inputEmail" class="form-control required email" placeholder="Your Email">
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-md-6">
-								<input type="phone" name="cf[phone]" class="form-control number" placeholder="Your Phone #">
+							<div id="cphone-group" class="col-md-6">
+                                <label></label>
+								<input type="phone" name="inputPhone" id="inputPhone" class="form-control number" pattern="[\-\(\)\s0-9]{8,15}" title="Please enter a valid phone number." placeholder="Your Phone #">
 							</div>
 							<div class="col-md-6">
-								<input type="text" name="cf[subject]" class="form-control required" placeholder="Subject">
+                                <label></label>
+								<input type="text" name="inputSubject" id="inputSubject" class="form-control required" placeholder="Subject">
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-md-12">
-								<textarea name="cf[message]" rows="6" class="form-control required" placeholder="Message"></textarea>
+								<textarea name="inputMessage" id="inputMessage" rows="6" class="form-control required" placeholder="Message"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
@@ -46,6 +48,7 @@
 							</div>
 						</div>
 					</form>
+                    </div>
             </div><!-- end contact-agent-info -->
             
             <div class="col-sm-6 who-we-are">

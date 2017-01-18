@@ -16,7 +16,6 @@ $data 			= array(); 		// array to pass back data
 
 	if (empty($_POST['inputName']))
 		$errors['name'] = 'Name is required.';
-
 	if (empty($_POST['inputEmail']))
 		$errors['email'] = 'Email is required.';
    	if (empty($_POST['inputPhone']))
@@ -38,19 +37,17 @@ $data 			= array(); 		// array to pass back data
     	if( empty($errors) ) {
             
             $title = htmlspecialchars_decode('{title}',ENT_QUOTES);    
-			$subject = $title . 'RSVP form (Bride: {bride_first_name} - Groom: {groom_first_name})';
+			$subject = $title . ' RSVP form (Bride: {bride_first_name} - Groom: {groom_first_name})';
 			$headers = 'From: ' . $send_to . "\r\n" .
 			    'Reply-To: ' . $send_to . "\r\n" .
 			    'X-Mailer: PHP/' . phpversion();
 
         	$message = 'Name: ' . $_POST['inputName'] . '
-
-Email: ' . $_POST['inputEmail'] . '
-
-Phone: ' . $_POST['inputPhone'] . '
-Guests: ' . $_POST['selectGuests'] . '
-
-Attending: ' . $_POST['selectAttending'];
+            
+            Email: ' . $_POST['inputEmail'] . '
+            Phone: ' . $_POST['inputPhone'] . '
+            Guests: ' . $_POST['selectGuests'] . '
+            Attending: ' . $_POST['selectAttending'];
 
         	$headers = 'From: RSVP Form' . '<' . $send_to . '>' . "\r\n" . 'Reply-To: ' . $_POST['inputEmail'];
 
@@ -89,7 +86,7 @@ Attending: ' . $_POST['selectAttending'];
             mail($send_to_client, $clientsubject, $clientmessage, $clientheaders);       
            
             
-        }
+            }
 
 		// show a message of success and provide a true success variable
 		$data['success'] = true;

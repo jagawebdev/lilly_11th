@@ -144,6 +144,12 @@ ul {
     height: 700px;
     font-family: 'Josefin Sans', Arial, sans-serif;
     color: $main-color;
+}
+
+.names {
+    background-color: rgba(255,255,255,0.4);    
+    width: 100%;
+    min-height: 100%;
     padding-top: 220px;
 }
 
@@ -817,8 +823,11 @@ iframe {
 
 @media (min-width: 769px) and (max-width: 1012px) {
     #hero {
-        padding-top: 120px;
         height: 500px;
+    }
+    
+    .names {
+        padding-top: 120px;
     }
 
     .couple-name {
@@ -837,8 +846,11 @@ iframe {
 
 @media screen and (max-width: 768px) {
     #hero {
-        padding-top: 120px;
         height: 500px;
+    }
+    
+    .names {
+        padding-top: 120px;
     }
     
     .couple-name {

@@ -468,7 +468,7 @@ footer a {
 .agent-cta-sm {
     border: $main-color 1px solid;
     background-color: white;
-     padding-top: 8px;
+    padding-top: 8px;
 }
 
 .agent-cta-title-sm {
@@ -481,17 +481,18 @@ footer a {
 .price-match-sm {
     margin-bottom: 5px;
     margin-left: 1px;
-    font-size: 13px;
+    font-size: 14px;
     background-color: $main-color;
     color: white;
     padding: 4px 5px 3px;
+    z-index: 200;
     &:hover {
         cursor: pointer;
     }
 }
 
 .price-match-button {
-    padding: 1px 5px 0;
+    padding: 3px 7px 0;
 }
 
 .learn-more {

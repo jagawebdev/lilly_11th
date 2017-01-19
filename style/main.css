@@ -832,15 +832,16 @@ footer a {
 .price-match-sm {
   margin-bottom: 5px;
   margin-left: 1px;
-  font-size: 13px;
+  font-size: 14px;
   background-color: #b9874c;
   color: white;
-  padding: 4px 5px 3px; }
+  padding: 4px 5px 3px;
+  z-index: 200; }
   .price-match-sm:hover {
     cursor: pointer; }
 
 .price-match-button {
-  padding: 1px 5px 0; }
+  padding: 3px 7px 0; }
 
 .learn-more {
   text-decoration: underline; }

@@ -16,6 +16,13 @@ $(document).ready(function() {
     * Fancybox
     */
     $(".fancybox").fancybox();
+    
+    /**
+    * making odd div change color
+    */
+    $( '#odd-div section:visible' ).each( function( i ){
+        $( this )[ (1&i) ? 'addClass' : 'removeClass' ]( 'visible-div' );
+    } );
 });
 
 

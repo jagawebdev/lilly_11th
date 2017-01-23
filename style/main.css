@@ -1020,6 +1020,9 @@ iframe {
   #packages .white {
     border: solid 10px #f6f6f6; }
 
+.space {
+  margin-top: 20px; }
+
 .ion-arrow-up-c {
   color: white;
   font-size: 20px;
@@ -1042,7 +1045,10 @@ iframe {
   float: none;
   vertical-align: top;
   text-align: left;
-  padding-top: 15px; }
+  padding-top: 15px;
+  -webkit-box-shadow: -1px 13px 46px -26px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 13px 46px -26px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 13px 46px -26px rgba(0, 0, 0, 0.75); }
 
 .pthumbnail {
   position: relative;

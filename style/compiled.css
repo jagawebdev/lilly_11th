@@ -364,6 +364,8 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+/*================================================= */
+/* NAVIGATION SECTION ============================ */
 header {
   display: block;
   position: absolute;
@@ -391,12 +393,14 @@ header {
   margin: auto;
   color: #b9874c;
   font-family: 'Josefin Sans', Arial, sans-serif; }
-  .navigation a {
-    color: #b9874c;
-    text-decoration: none;
-    letter-spacing: 1px; }
-    .navigation a:hover {
-      text-decoration: underline; }
+
+.navigation a {
+  color: #b9874c;
+  text-decoration: none;
+  letter-spacing: 1px; }
+
+.navigation a:hover {
+  text-decoration: underline; }
 
 .logo {
   position: relative;
@@ -411,14 +415,28 @@ header {
   position: relative;
   display: block;
   float: right; }
-  .navigation-list ul {
-    list-style: none; }
-    .navigation-list ul li {
-      display: inline-block;
-      text-transform: uppercase;
-      padding-right: 25px; }
-    .navigation-list ul li:last-child {
-      padding: 0 0; }
+
+.navigation-list ul {
+  list-style: none; }
+
+.navigation-list ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-right: 25px; }
+
+.navigation-list ul li:last-child {
+  padding: 0 0; }
+
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
+.dropdown-menu {
+  margin-top: 0;
+  border: solid 1px #b9874c; }
+
+.navigation-list .dropdown-menu li {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  text-transform: none; }
 
 .hamburger {
   display: none;
@@ -429,8 +447,9 @@ header {
   float: right;
   text-align: right;
   z-index: 300; }
-  .hamburger:hover {
-    cursor: pointer; }
+
+.hamburger:hover {
+  cursor: pointer; }
 
 .drop-menu {
   display: none;
@@ -442,28 +461,64 @@ header {
   text-align: center;
   z-index: 200;
   background-color: white; }
-  .drop-menu ul {
-    list-style: none;
-    padding-left: 0; }
-    .drop-menu ul li {
-      padding-top: 20px; }
-    .drop-menu ul a {
-      text-decoration: none;
-      font-size: 14px;
-      text-transform: uppercase;
-      color: #b9874c; }
-      .drop-menu ul a:hover {
-        color: #b9874c; }
+
+.drop-menu ul {
+  list-style: none;
+  padding-left: 0; }
+
+.drop-menu ul li {
+  padding-top: 20px; }
+
+.drop-menu ul a {
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b9874c; }
+
+.drop-menu ul a:hover {
+  color: #b9874c; }
 
 @media screen and (max-width: 770px) {
   .navigation {
     width: 100%; }
-    .navigation .navigation-list {
-      display: none; }
+
+  .navigation .navigation-list {
+    display: none; }
 
   .hamburger {
     display: inline-block;
     z-index: 300; } }
+@media screen and (max-width: 1025px) {
+  .dropdown:hover .dropdown-menu {
+    display: none; }
+
+  .caret {
+    display: none; } }
+/* 1.0 General ========= */
+/* 2.0 Global ========= */
+/* 3.0 Hero ========= */
+/* 3.1 Count-Down ========= */
+/* 3.2 WEDDING, DESTINATION, RESERVATION INFO ========= */
+/* 4.0 RSVP MODAL ========= */
+/* 5.0 FOOTER ========= */
+/* 5.1 FIXED FOOTER ========= */
+/* 5.2 FIXED FOOTER FOR SMALL VIEW ========= */
+/* 6.0 FAQ PAGE ======= */
+/* 7.0 CONTACT PAGE ======= */
+/* 8.0 WEDDING PAGE ======= */
+/* 8.1 GALLERY ======= */
+/* 8.2 STORY LINE ======= */
+/* 8.3 BRIDESMAIDS AND GROOMSMEN ======= */
+/* 8.4 REGISTERY ======= */
+/* 8.5 GUEST LIST ======= */
+/* 8.6 HASHTAG ======= */
+/* 9.0 DESTINATION PAGE ======= */
+/* 9.1 PACKAGE INFORMATION ======= */
+/* 9.2 ADDITIONAL INFORMATION ======= */
+/* 9.3 BOOKING ======= */
+/*  10.0 Pulse Keyframe========= */
+/* ************************************* */
+/* 1.0 General ========= */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -492,6 +547,8 @@ b, strong {
 .colored-div {
   background-color: #f6f6f6; }
 
+/* ************************************* */
+/* 2.0 Global ========= */
 h1, h2, h3 {
   font-family: 'Josefin Sans', Arial, sans-serif;
   color: #b9874c;
@@ -510,9 +567,10 @@ button {
   overflow: hidden;
   color: white;
   margin-bottom: 3px; }
-  button:hover {
-    color: #b9874c;
-    background-color: transparent; }
+
+button:hover {
+  color: #b9874c;
+  background-color: transparent; }
 
 button:focus {
   outline: 0; }
@@ -560,18 +618,31 @@ ul {
   /* inline-block space fix */
   margin-right: -4px; }
 
+/* ************************************* */
+/* 3.0 Hero ========= */
 #hero {
   background: url("../assets/img/<background_image>") center no-repeat;
   background-size: cover;
   width: 100%;
   height: 700px;
   font-family: 'Josefin Sans', Arial, sans-serif;
-  color: #b9874c;
-  padding-top: 220px; }
+  color: #b9874c; }
+
+.tint-box {
+  padding: 220px 0 90px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.tint {
+  background-color: rgba(255, 255, 255, 0.3); }
 
 .couple-name {
   font-family: 'Playfair Display SC', serif;
-  color: #b9874c;
   font-size: 60px; }
 
 .couple-name-two {
@@ -592,6 +663,8 @@ ul {
   color: #b9874c;
   font-weight: bold; }
 
+/* ************************************* */
+/* 3.1 COUNT DOWN ========= */
 #count-down {
   padding: 40px 0 20px 0;
   font-family: 'Josefin Sans', Arial, sans-serif;
@@ -606,6 +679,8 @@ ul {
 #count-down .number {
   font-size: 50px; }
 
+/* ************************************* */
+/* 3.2 WEDDING, DESTINATION, RESERVATION INFO ========= */
 #samples-page section:nth-child(odd) {
   background: #f6f6f6; }
 
@@ -629,6 +704,8 @@ ul {
 .sample-info-text {
   padding: 20px 60px 0; }
 
+/* ************************************* */
+/* 4.0 RSVP MODAL ========= */
 #rsvpModal, #guestList {
   margin-top: 80px; }
 
@@ -668,14 +745,15 @@ textarea {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="phone"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
-  textarea:focus {
-    border: solid 1px #b9874c; }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="phone"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  border: solid 1px #b9874c; }
 
 .close-button {
   font-size: 80px;
@@ -694,9 +772,12 @@ textarea {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important; }
-  .form-control:focus {
-    border: solid 1px #b9874c; }
 
+.form-control:focus {
+  border: solid 1px #b9874c; }
+
+/* ************************************* */
+/* 5.0 FOOTER ========= */
 footer {
   border-top: solid 1px #b9874c;
   background-color: #f0efee;
@@ -709,8 +790,9 @@ footer h5, footer h4 {
 footer a {
   color: #b9874c;
   text-decoration: underline; }
-  footer a:hover {
-    color: #b9874c; }
+
+footer a:hover {
+  color: #b9874c; }
 
 .social-list ul a {
   color: white;
@@ -721,10 +803,13 @@ footer a {
   border-radius: 100%;
   padding: 6px 12px 4px;
   background-color: #b9874c; }
-  .social-list ul a:hover {
-    background-color: transparent;
-    color: #b9874c; }
 
+.social-list ul a:hover {
+  background-color: transparent;
+  color: #b9874c; }
+
+/* ************************************* */
+/* 5.1 FIXED FOOTER ========= */
 #fixed-footer {
   display: inline-block !important;
   position: fixed;
@@ -732,14 +817,17 @@ footer a {
   right: 0;
   float: right;
   margin: auto 15px 15px auto; }
-  #fixed-footer h6 {
-    color: #b9874c; }
-  #fixed-footer a {
-    color: black;
-    text-decoration: underline;
-    cursor: pointer; }
-    #fixed-footer a:hover {
-      color: black; }
+
+#fixed-footer h6 {
+  color: #b9874c; }
+
+#fixed-footer a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer; }
+
+#fixed-footer a:hover {
+  color: black; }
 
 .agent-cta {
   border: #b9874c 1px solid;
@@ -775,12 +863,14 @@ footer a {
   margin: auto;
   margin-bottom: 5px;
   font-size: 13px; }
-  .price-match:hover {
-    cursor: pointer; }
-  .price-match img {
-    width: 130px;
-    margin: auto;
-    display: block; }
+
+.price-match:hover {
+  cursor: pointer; }
+
+.price-match img {
+  width: 130px;
+  margin: auto;
+  display: block; }
 
 .price-match .title1 {
   font-size: 25px;
@@ -814,18 +904,22 @@ footer a {
   border-radius: 6px;
   border: #b9874c 1px solid; }
 
+/* ************************************* */
+/* 5.2 FIXED FOOTER FOR SMALL VIEW ========= */
 #fixed-footer-sm {
   display: inline-block !important;
   position: fixed;
   bottom: 0;
   right: 0;
   left: 0; }
-  #fixed-footer-sm a {
-    color: black;
-    text-decoration: underline;
-    cursor: pointer; }
-    #fixed-footer-sm a:hover {
-      color: black; }
+
+#fixed-footer-sm a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer; }
+
+#fixed-footer-sm a:hover {
+  color: black; }
 
 .agent-cta-sm {
   border: #b9874c 1px solid;
@@ -843,11 +937,13 @@ footer a {
   margin-left: 1px;
   font-size: 14px;
   background-color: #b9874c;
-  color: white;
+  color: white !important;
   padding: 4px 5px 3px;
-  z-index: 200; }
-  .price-match-sm:hover {
-    cursor: pointer; }
+  z-index: 200;
+  text-decoration: none !important; }
+
+.price-match-sm:hover {
+  cursor: pointer; }
 
 .price-match-button {
   padding: 3px 7px 0; }
@@ -864,20 +960,26 @@ footer a {
   color: black;
   border: #b9874c 1px solid; }
 
+/* ************************************* */
+/* 6.0 FAQ PAGE ========= */
 .faq-content h5 {
   color: #b9874c; }
 
 .faq-content p {
   margin-bottom: 30px; }
 
+/* ************************************* */
+/*  7.0 CONTACT PAGE ========= */
 #contact {
   margin-bottom: 50px; }
-  #contact a {
-    color: black;
-    text-decoration: underline;
-    cursor: pointer; }
-    #contact a:hover {
-      color: black; }
+
+#contact a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer; }
+
+#contact a:hover {
+  color: black; }
 
 .contact-agent-info {
   background-color: #f6f6f6;
@@ -891,14 +993,17 @@ footer a {
   background-color: white;
   margin-top: 30px;
   padding-top: 10px; }
-  .promo a {
-    color: #b9874c !important;
-    text-decoration: underline;
-    cursor: pointer; }
-    .promo a:hover {
-      color: #b9874c; }
-  .promo img {
-    max-width: 150px; }
+
+.promo a {
+  color: #b9874c !important;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.promo a:hover {
+  color: #b9874c; }
+
+.promo img {
+  max-width: 150px; }
 
 .black-bg img {
   background-color: black;
@@ -908,15 +1013,18 @@ footer a {
   margin-top: 30px;
   max-width: 400px; }
 
-#wedding-page section:nth-child(odd) {
-  background: #f6f6f6; }
-
+/* ************************************* */
+/*  8.0 WEDDING PAGE ========= */
 #wedding {
   margin-bottom: 20px; }
-  #wedding .couple-name {
-    margin-bottom: 0;
-    line-height: 50px; }
 
+#wedding .couple-name {
+  margin-bottom: 0;
+  line-height: 50px;
+  color: #b9874c; }
+
+/* ************************************* */
+/*  8.1 GALLERY ========= */
 .image-list {
   display: inline-block; }
 
@@ -953,12 +1061,16 @@ footer a {
   text-align: center;
   padding: 5px 15px; }
 
+/* ************************************* */
+/*  8.2 STORY LINE========= */
 #couple-story button {
   margin-top: 10px; }
 
 .fade {
   opacity: 0.5; }
 
+/* ************************************* */
+/*  8.3 BRIDESMAIDS AND GROOMSMEN========= */
 #maids-grooms h4 {
   color: #b9874c; }
 
@@ -981,14 +1093,21 @@ footer a {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
+/* ************************************* */
+/*  8.5 GUEST LIST========= */
 iframe {
   border: none; }
 
+/* ************************************* */
+/*   8.6 HASHTAG========= */
 .hashtag {
   font-size: 24px; }
 
+/* ************************************* */
+/*   9.0 DESTINATION PAGE========= */
 #destination h1 {
   margin-bottom: 0; }
+
 #destination h4 {
   margin-top: 5px; }
 
@@ -1013,12 +1132,16 @@ iframe {
   outline: 1px solid #b9874c;
   outline-offset: -20px; }
 
+/* ************************************* */
+/*   9.1 PACKAGE INFORMATION========= */
 #packages {
   background-color: #f6f6f6; }
-  #packages h1 {
-    margin-bottom: 10px; }
-  #packages .white {
-    border: solid 10px #f6f6f6; }
+
+#packages h1 {
+  margin-bottom: 10px; }
+
+#packages .white {
+  border: solid 10px #f6f6f6; }
 
 .space {
   margin-top: 20px; }
@@ -1032,9 +1155,10 @@ iframe {
   border-radius: 100%;
   padding: 0px 6px 0px;
   background-color: #b9874c; }
-  .ion-arrow-up-c:hover {
-    background-color: transparent;
-    color: #b9874c; }
+
+.ion-arrow-up-c:hover {
+  background-color: transparent;
+  color: #b9874c; }
 
 .jrow-centered {
   text-align: center;
@@ -1049,6 +1173,14 @@ iframe {
   -webkit-box-shadow: -1px 13px 46px -26px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 13px 46px -26px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 13px 46px -26px rgba(0, 0, 0, 0.75); }
+
+.horizontal-package {
+  margin: 15px 10px 0 10px;
+  padding: 15px 10px;
+  background-color: white;
+  -webkit-box-shadow: -5px 10px 35px -7px #949494;
+  -moz-box-shadow: -5px 10px 35px -7px #949494;
+  box-shadow: -5px 10px 35px -7px #949494; }
 
 .pthumbnail {
   position: relative;
@@ -1070,13 +1202,19 @@ iframe {
   font-size: 20px;
   color: black; }
 
+/* ************************************* */
+/*   9.3 BOOKING INFORMATION========= */
+#booking {
+  background-color: #f6f6f6; }
+
 .booking-well {
-  background-color: #f6f6f6;
+  background-color: white;
   padding: 15px;
-  border: solid 10px white; }
-  .booking-well .booking-number {
-    text-transform: uppercase;
-    color: #b9874c; }
+  border: solid 10px #f6f6f6; }
+
+.booking-well .booking-number {
+  text-transform: uppercase;
+  color: #b9874c; }
 
 .para-bottom {
   margin-bottom: 57px; }
@@ -1088,14 +1226,17 @@ iframe {
   margin-bottom: 37px; }
 
 #payment {
-  background-color: #f6f6f6; }
-  #payment button {
-    margin-left: 10px; }
+  background-color: white; }
+
+#payment button {
+  margin-left: 10px; }
 
 @media (min-width: 769px) and (max-width: 1012px) {
   #hero {
-    padding-top: 120px;
     height: 500px; }
+
+  .tint-box {
+    padding-top: 120px; }
 
   .couple-name {
     font-size: 50px; }
@@ -1107,8 +1248,10 @@ iframe {
     padding: 0px 60px 0; } }
 @media screen and (max-width: 768px) {
   #hero {
-    padding-top: 120px;
     height: 500px; }
+
+  .tint-box {
+    padding-top: 120px; }
 
   .couple-name {
     font-size: 50px;
@@ -1122,8 +1265,9 @@ iframe {
 
   #count-down {
     padding: 20px 0 10px 0; }
-    #count-down .col-xs-2 {
-      padding: 0; }
+
+  #count-down .col-xs-2 {
+    padding: 0; }
 
   #count-down .label {
     font-size: 9px; }
@@ -1158,7 +1302,7 @@ iframe {
     width: 100%; }
 
   .booking-well {
-    border: solid 10px white;
+    border: solid 10px  #f6f6f6;
     width: 100%; }
 
   #booking .row {
@@ -1186,4 +1330,4 @@ iframe {
   .pthumbnail {
     height: 120px; } }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=compiled.css.map */

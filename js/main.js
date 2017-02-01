@@ -1,9 +1,9 @@
 /*global $*/
-
 /* PRELOADER */
 $(window).ready(function() {
     $('#loading').hide();
 });
+
 
 $(document).ready(function() {
    /**
@@ -17,25 +17,18 @@ $(document).ready(function() {
     $(document).click( function(){
         $('.drop-menu').hide();
     });
-    
+
     /**
     * Fancybox
     */
     $(".fancybox").fancybox();
-    
-    /**
-    * making odd div change color
-    */
-    $( '#odd-div section:visible' ).each( function( i ){
-        $( this )[ (1&i) ? 'addClass' : 'removeClass' ]( 'visible-div' );
-    } );
 });
 
 
 /**
 * Window scroll effects
 */
-$(window).scroll(function(){   
+$(window).scroll(function(){
     /**
     * Menu show after scroll
     */
@@ -44,22 +37,30 @@ $(window).scroll(function(){
     } else {
         $('#menu').fadeOut(400);
     }
-    
+
     /**
     * Scroll slow effect to #packages
     */
     $("#to-top").click(function() {
-        $('html, body').animate({
+        $('html:not(:animated),body:not(:animated)').animate({
             scrollTop: $("#packages").offset().top
         }, 2000);
+        return false;
+        $(window).bind("mousewheel", function() {
+        $("html, body").stop(true, false);
     });
-    
+    });
+
     /**
     * Scroll slow effect to #booking
     */
     $(".scroll-to").click(function() {
-        $('html, body').animate({
+        $('html:not(:animated),body:not(:animated)').animate({
             scrollTop: $("#booking").offset().top
         }, 2000);
+        return false;
+        $(window).bind("mousewheel", function() {
+        $("html, body").stop(true, false);
+        });
     });
 });

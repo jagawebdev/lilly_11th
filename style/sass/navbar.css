@@ -1,3 +1,5 @@
+/*================================================= */
+/* NAVIGATION SECTION ============================ */
 header {
   display: block;
   position: absolute;
@@ -25,12 +27,14 @@ header {
   margin: auto;
   color: #b9874c;
   font-family: 'Josefin Sans', Arial, sans-serif; }
-  .navigation a {
-    color: #b9874c;
-    text-decoration: none;
-    letter-spacing: 1px; }
-    .navigation a:hover {
-      text-decoration: underline; }
+
+.navigation a {
+  color: #b9874c;
+  text-decoration: none;
+  letter-spacing: 1px; }
+
+.navigation a:hover {
+  text-decoration: underline; }
 
 .logo {
   position: relative;
@@ -45,14 +49,17 @@ header {
   position: relative;
   display: block;
   float: right; }
-  .navigation-list ul {
-    list-style: none; }
-    .navigation-list ul li {
-      display: inline-block;
-      text-transform: uppercase;
-      padding-right: 25px; }
-    .navigation-list ul li:last-child {
-      padding: 0 0; }
+
+.navigation-list ul {
+  list-style: none; }
+
+.navigation-list ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-right: 25px; }
+
+.navigation-list ul li:last-child {
+  padding: 0 0; }
 
 .hamburger {
   display: none;
@@ -63,8 +70,9 @@ header {
   float: right;
   text-align: right;
   z-index: 300; }
-  .hamburger:hover {
-    cursor: pointer; }
+
+.hamburger:hover {
+  cursor: pointer; }
 
 .drop-menu {
   display: none;
@@ -76,24 +84,29 @@ header {
   text-align: center;
   z-index: 200;
   background-color: white; }
-  .drop-menu ul {
-    list-style: none;
-    padding-left: 0; }
-    .drop-menu ul li {
-      padding-top: 20px; }
-    .drop-menu ul a {
-      text-decoration: none;
-      font-size: 14px;
-      text-transform: uppercase;
-      color: #b9874c; }
-      .drop-menu ul a:hover {
-        color: #b9874c; }
+
+.drop-menu ul {
+  list-style: none;
+  padding-left: 0; }
+
+.drop-menu ul li {
+  padding-top: 20px; }
+
+.drop-menu ul a {
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b9874c; }
+
+.drop-menu ul a:hover {
+  color: #b9874c; }
 
 @media screen and (max-width: 770px) {
   .navigation {
     width: 100%; }
-    .navigation .navigation-list {
-      display: none; }
+
+  .navigation .navigation-list {
+    display: none; }
 
   .hamburger {
     display: inline-block;

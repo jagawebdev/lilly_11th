@@ -1,5 +1,6 @@
 <!-- HERO ====================================== -->
 <section id="hero">
+<div class="tint-box {background_tint}">
     <div class="names">
         <div class="container">
     	    <div class="row">
@@ -8,14 +9,17 @@
         	    <div class="couple-name-two couple-name col-sm-5 text-left">{groom_first_name}</div>
         	    <div class="clearfix"></div>
     	    </div><!-- end row -->
+
     	    
     	    <div class="wedding-subtitle text-center">Wedding</br> {wedding_date}</div>
     	    <!--<div class="wedding-subtitle text-center">{wedding_title}</br> {wedding_date}</div>-->
         </div><!-- end container -->
     </div>
+</div>
 </section><!-- end hero -->
 
 <!-- COUNT DOWN ====================================== -->
+
 <section id="count-down" class="container text-center" style="display: {countdownCss}">
     <div class="row">
         <div id="countdown">
@@ -42,14 +46,22 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 sample-info-pic-wedding">
-                <img src="images/1.jpg" alt="couple's picture" />
+
+                <img src="{img1}" alt="couple's picture" />
             </div><!-- end sample-info-pic -->
             
             <div class="col-sm-6 sample-info-text">
                 <h2>Wedding</h2>
                 <p>We're getting married on {wedding_date} at {hotel_c} in {destination_c}! 
                 We truly hope you can join our family in this special celebration.</p>
+
+
+
+
+
                 <button data-toggle="modal" data-target="#rsvpModal">rsvp</button>
+
+
                 <a href="#/wedding" style="display:{weddingpageCss};"><button>Wedding Page</button></a>
                 </br></br>
                 <p>We have hired a booking agent to make your travel
@@ -66,7 +78,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 sample-info-pic col-sm-push-6">
-                <img src="assets/img/{hotel_c}1.jpg" alt="hotel picture"/>
+                <img src="assets/img/{hotel_c}1.jpg"/>
             </div><!-- end sampl-info-pic -->
             
             <div class="col-sm-6 sample-info-text col-sm-pull-6">

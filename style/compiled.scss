@@ -46,6 +46,7 @@ img {
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Raleway', Helvetica, sans-serif;
   font-size: 14px;
   min-height: 100%;
@@ -523,6 +524,10 @@ footer a:hover {
 
 .price-match-button {
   padding: 3px 7px 0;
+}
+
+.price-match-button:hover {
+  color: $main-color !important;
 }
 
 .learn-more {

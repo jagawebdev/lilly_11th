@@ -61,6 +61,17 @@ header {
 .navigation-list ul li:last-child {
   padding: 0 0; }
 
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
+.dropdown-menu {
+  margin-top: 0;
+  border: solid 1px #b9874c; }
+
+.navigation-list .dropdown-menu li {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  text-transform: none; }
+
 .hamburger {
   display: none;
   color: #b9874c;
@@ -111,5 +122,11 @@ header {
   .hamburger {
     display: inline-block;
     z-index: 300; } }
+@media screen and (max-width: 1025px) {
+  .dropdown:hover .dropdown-menu {
+    display: none; }
+
+  .caret {
+    display: none; } }
 
 /*# sourceMappingURL=navbar.css.map */
